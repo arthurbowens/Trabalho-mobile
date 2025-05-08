@@ -1,4 +1,4 @@
-import api from "utils/api";
+import api from '../../controllers/apiController';
 
 type SignupDTO = {
     name: string;
@@ -6,18 +6,17 @@ type SignupDTO = {
     password: string;
     confirmPassword: string;
     birthday: string;
-};
+}
 
 export const signin = (email, password) => {
     return api.post("/auth/signin", {
         email,
-        password
-    })
+        password,
+    });
 };
 
 export const signup = (data) => {
     return api.post("/auth/signup", data);
-    
 };
 
 export const signout = () => {

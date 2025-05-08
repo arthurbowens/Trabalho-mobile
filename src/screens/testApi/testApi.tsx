@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import api from 'utils/api'; 
+import api from "../../controllers/apiController";
 
 export default function TestApi() {
- 
+
     const [data, setData] = useState(null);
- 
+
     useEffect(() => {
         const getData = () => {
             api.get("https://pokeapi.co/api/v2/pokemon/ditto").then((response) => {
@@ -13,16 +13,16 @@ export default function TestApi() {
                 setData(response.data);
             });
         };
- 
+
         getData();
     }, []);
- 
+
     return (
         <View style={styles.container}>
             {!!data && (
                 <>
                     <Text style={styles.text}>{data.name}</Text>
- 
+
                     <View style={styles.list}>
                         <Text style={styles.subtitle}>Poderes</Text>
                         <View>
@@ -33,11 +33,11 @@ export default function TestApi() {
                     </View>
                 </>
             )}
- 
+
         </View>
     );
 }
- 
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     list: {
- 
+
     },
     subtitle: {
- 
+
     }
 })

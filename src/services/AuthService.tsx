@@ -1,7 +1,8 @@
-import * as authResource from './AuthResource';
+import * as authResource from '../core/auth/authResource';
+
 
 export const signin = (email, password) => {
-    return authResource.signin(email, password).then((response) => response.data);
+   return authResource.signin(email, password).then((response) => response.data);
 };
 
 export const signup = (data) => {

@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function LoginScreen() {
     return (
         <View style={styles.container}>
-          <Text>Opencfff!</Text>
+          <Text style={styles.text}>SIGN IN</Text>
           <StatusBar style="auto" />
         </View>
     )
@@ -18,5 +18,13 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    text: {
+        color: '#8d0000',
+        fontWeight: 'bold',
+    },
+    textInput: {
+        color: '#c31208',
+        //width: 150,
+    }
   });
   

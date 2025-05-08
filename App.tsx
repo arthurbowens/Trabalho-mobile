@@ -1,5 +1,5 @@
-import {Layout} from './Layout.js'
+import Layout from './Layout';
 
-export default function app() {
-  return <Layout />;
+export default function App() {
+  return <Layout/>
 }

@@ -2,7 +2,7 @@
     "name": "passgenerator",
     "license": "0BSD",
     "version": "1.0.0",
-    "main": "index.tsx",
+    "main": "index.js",
     "scripts": {
         "start": "expo start",
         "android": "expo start --android",
@@ -27,7 +27,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.20.0",
-        "@types/react": "^18.3.20",
+        "@types/react": "^18.3.21",
         "@types/react-native": "^0.72.8",
         "typescript": "^5.8.2"
     },

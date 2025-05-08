@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import LoginScreen from './src/screens/login/LoginScreen';
 import RegisterScreen from './src/screens/register/RegisterScreen';
-import TestApi from 'screens/testApi/testApi';
+import TestApi from './src/screens/testApi/TestApiScreen';
 
 const Stack = createNativeStackNavigator();
 

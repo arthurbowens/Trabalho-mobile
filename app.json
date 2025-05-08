@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "passGenerator",
-    "slug": "passGenerator",
+    "name": "pass-generator-typescript",
+    "slug": "pass-generator-typescript",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
